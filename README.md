@@ -303,7 +303,8 @@ For android plugin broadcasting intent `com.cowbell.cordova.geofence.TRANSITION`
 Register receiver in `AndroidManifest.xml`
 
 ```xml
-<receiver android:name="YOUR_APP_PACKAGE_NAME.TransitionReceiver">
+<receiver android:name="YOUR_APP_PACKAGE_NAME.TransitionReceiver" 
+          android:exported="true">
     <intent-filter>
         <action android:name="com.cowbell.cordova.geofence.TRANSITION" />
     </intent-filter>
